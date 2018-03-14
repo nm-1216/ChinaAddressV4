@@ -1,0 +1,32 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://cdn.bootcss.com/jquery/1.10.1/jquery.js"></script>
+  	<script type="text/javascript" src="data.js"></script>
+  	<script type="text/javascript" src="ChinaAddressV4.js"></script>
+    <title>ChinaAddressV4!</title>
+	<style>
+	html,body{
+		height:100%;margin:0;padding:0;background:#fff;text-align:center
+	}
+	select{min-width:200px}
+	</style>
+  </head>
+
+ <body>
+<div class="form-inline" style="margin:100px auto 0 auto;width:700px">
+	<select class="form-control" id="id1"></select>
+	<select class="form-control" id="id2"></select>
+	<select class="form-control" id="id3"></select>
+</div>
+
+<script>
+	(function(){chinaAddressV4.init('#id1','#id2','#id3',420117)})()
+</script>
+ </body>
+</html>
